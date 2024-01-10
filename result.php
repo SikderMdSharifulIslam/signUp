@@ -22,11 +22,30 @@ $your_email = $_POST ['your_email'];
 $your_password = $_POST ['your_password'];
 $confirm_password = $_POST ['confirm_password'];
 
+$_SESSION ['duplicate'] = "Email Already Used!";
+
 if($your_password == $confirm_password)
 {
-    $insert_query = "INSERT INTO users(full_name, email_address, password) VALUES ('$full_name','$your_email','$your_password');";
-    mysqli_query($db_connect,$insert_query);
-    header("location: login.php");
+
+    $count_query = "SELECT COUNT(*) as duplicateEmail FROM users WHERE email_address = '$your_email'";
+    $from_db = mysqli_query($db_connect, $count_query);
+    $after_assoc = mysqli_fetch_assoc($from_db);
+    // print_r($after_assoc['duplicateEmail']);
+
+    if($after_assoc['duplicateEmail'] == 0)
+    {
+        $insert_query = "INSERT INTO users(full_name, email_address, password) VALUES ('$full_name','$your_email','$your_password');";
+        mysqli_query($db_connect,$insert_query);
+        header("location: login.php");
+    }
+    else
+    {
+        echo "Email Already Used!";
+    }
+
+    // $insert_query = "INSERT INTO users(full_name, email_address, password) VALUES ('$full_name','$your_email','$your_password');";
+    // mysqli_query($db_connect,$insert_query);
+    // header("location: login.php");
 }
 else
 {

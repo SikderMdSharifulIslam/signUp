@@ -2,32 +2,33 @@
 <?php
 require_once 'includes/header.php';
 require_once 'includes/navbar.php';
+
 ?>
 <!-- Header Part End -->
 
-<div class="row">
-    <div class="col-lg-8 m-auto bg-success">
-        <div class="card bg-success mb-3">
-            <div class="card-header text-white text-center">
+<div class="">
+    <div class="col-lg-12 m-auto bg-light">
+        <div class="card bg-light mb-3">
+            <div class="card-header text-black text-center">
                 Header
             </div>
             <div class="card-body text-success">
                 <!-- form start -->
                 <form action="result.php" method="POST">
                     <div class="mb-3">
-                        <label class="form-label text-white">Name</label>
+                        <label class="form-label text-black">Name</label>
                         <input type="text" class="form-control" name="full_name">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label text-white">Email</label>
+                        <label class="form-label text-black">Email</label>
                         <input type="email" class="form-control" name="your_email">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label text-white">Password</label>
+                        <label class="form-label text-black">Password</label>
                         <input type="password" class="form-control" name="your_password">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label text-white">Confirm Password</label>
+                        <label class="form-label text-black">Confirm Password</label>
                         <input type="password" class="form-control" name="confirm_password">
                     </div>
                     

@@ -16,7 +16,7 @@ $total_user = $totalA['total'];
 <!-- Header Part End -->
 
 
-<div class="row">
+<div class="">
     <div class="col-lg-12 m-auto">
         <div class="alert alert-light">Total User: <?=$total_user?></div>
         <div class="card bg-light mb-3">
