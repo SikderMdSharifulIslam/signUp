@@ -45,7 +45,8 @@ $total_user = $totalA['total'];
                             <td><?=$user_value['full_name']?></td>
                             <td><?=$user_value['email_address']?></td>
                             <td>
-                                <a href="#" class="btn btn-primary">Edit</a>
+                                <a href="update.php?id=<?=$user_value['id']?>" id="myModal" class="btn btn-primary">Edit</a>
+
                                 <a href="delete.php?id=<?=$user_value['id']?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
