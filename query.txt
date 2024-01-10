@@ -8,3 +8,6 @@ hostname: localhost
 username: root
 password: "" (blank)
 database_name: sign_up
+
+
+SELECT id,full_name, email_address, FROM users
