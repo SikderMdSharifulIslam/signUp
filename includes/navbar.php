@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="signup.php">Sign Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Log In</a>
+          <a class="nav-link" href="login.php">Login</a>
         </li>
       </ul>
     </div>
