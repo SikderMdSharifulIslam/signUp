@@ -1,7 +1,7 @@
 <!-- Header Part Start -->
 <?php
-include 'includes/header.php';
-include 'includes/navbar.php';
+require_once 'includes/header.php';
+require_once 'includes/navbar.php';
 ?>
 <!-- Header Part End -->
 

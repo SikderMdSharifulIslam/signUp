@@ -1,19 +1,20 @@
 <?php
 
 //header
-include 'includes/header.php';
-include 'includes/navbar.php';
+require_once 'includes/header.php';
+require_once 'includes/navbar.php';
+require_once 'includes/db.php';
 
 // Database connect
 // $hostname = "localhost";
 // $username = "root";
 // $password = "";
 // $database_name = "sign_up";
-define("HOSTNAME", "localhost");
-define("USERNAME", "root");
-define("PASSWORD", "");
-define("DATABASE_NAME", "sign_up");
-$db_connect = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE_NAME);
+// define("HOSTNAME", "localhost");
+// define("USERNAME", "root");
+// define("PASSWORD", "");
+// define("DATABASE_NAME", "sign_up");
+// $db_connect = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE_NAME);
 
 
 $full_name = $_POST ['full_name'];

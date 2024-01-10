@@ -10,4 +10,16 @@ password: "" (blank)
 database_name: sign_up
 
 
-SELECT id,full_name, email_address, FROM users
+SELECT id,full_name, email_address FROM users
+
+
+Single Data fetch from db:
+$after_assoc = mysqli_fetch_assoc($data_from_db);
+print_r($after_assoc);
+
+
+php+echo shorthand:
+<?=?>
+
+
+DELETE FROM users WHERE id=$id
